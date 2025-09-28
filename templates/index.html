@@ -4,35 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Uny+Perto</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Uny+Perto</title>
+    <link rel="stylesheet" href="../src/styles/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Uny+Perto</h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Item3</a></li>
-            <li><a href="#">Item4</a></li>
-            <li><a href="#">Item5</a></li>
-        </ul>
-        <div class="loginbtn"> <a href="#">Login/Registrar</a></div>
+        <nav>
+            <h1>Uny + Perto</h1>
+
+            <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Convênios</a></li>
+            <li><a href="#">Resultados</a></li>
+            <li><a href="#" class="login-btn">Login/Cadastrar</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="imageminicial">
-            <img src="../assets/bus.png" alt="exemplo de onibus fic">
-        </section>
-        <section class="textoinicial">
-            <h2>Saúde mais perto de Você</h2>
-            <button>Veja onde estamos</button>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="">
+            </div>
+
+            <div class="hero-text">
+                <h2>Saúde mais perto de Você</h2>
+                <button>Veja onde estamos</button>
+            </div>
         </section>
         <section class="previaservicos">
             <div class="cards">
-                <div class="card">Serviços</div>
-                <div class="card">Agenda</div>
-                <div class="card">Localização</div>
-                <div class="card">Quem Somos</div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="card-title">Serviços</h3>
+                    <p>Nossos serviços</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3 class="card-title">Agendamentos</h3>
+                    <p>Agende aqui</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="card-title">Localização</h3>
+                    <p>Nossos Locais</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <h3 class="card-title">Sobre</h3>
+                    <p>Sobre Nós</p>
+                </div>
             </div>
         </section>
         <section class="locprev">
