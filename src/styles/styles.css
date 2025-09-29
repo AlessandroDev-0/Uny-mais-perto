@@ -1,4 +1,6 @@
 @import url('header.css');
+@import url('footer.css');
+@import url('home.css');
 
 * {
     margin: 0;
@@ -16,54 +18,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    background-color: white;
-    padding: 3rem;
-    border-radius: 10px;
-    margin-bottom: 4rem;
-}
-
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    width: 400px;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    color: #3366AA;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
-
-
-.hero-text button {
-    background-color: #3366AA;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hero-text button:hover {
-    background-color: #1e40af;
 }
 
 .previaservicos {
@@ -160,13 +114,6 @@ main {
     border: none;
 }
 
-footer {
-    background-color: #3366AA;
-    height: 100px;
-    margin-top: 3rem;
-}
-
-/* Tablets (máx 768px) */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -209,7 +156,6 @@ footer {
     }
 }
 
-/* Celulares (máx 480px) */
 @media (max-width: 480px) {
     header {
         padding: 1rem;
