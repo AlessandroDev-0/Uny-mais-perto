@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../src/styles/styles.css">
     <title>Login/Cadastro</title>
 </head>
 <body>
+    <section>
+        <a href="index.html" class="btn">Voltar</a>
+    </section>
     <main>
         <section class="logo">
             <h1 class="tittle">ÔNIBUS MÉDICO MÓVEL</h1>
@@ -18,13 +22,19 @@
             <p class="descricao">Saúde mais perto de você</p>
         </section>
 
-        <section>
-            <h2 class="title2">Entrar no sistema</h2>
-            <form action="">
+        <section class="form-container">
+
+            <div class="tabs">
+            <button class="tab active" onclick="mostrarLogin()">Login</button>
+            <button class="tab" onclick="mostrarCadastro()">Cadastro</button>
+            </div>
+
+            <h2 class="title2" id="tituloLogin">Entrar no sistema</h2>
+            <form id="formLogin">
             <input type="text" placeholder="Usuário">
             <input type="password" placeholder="Senha">
 
-            <div>
+            <div class="checkbox">
             <input type="checkbox">
             <p class="descricao">Lembrar-me</p>
             </div>
@@ -34,7 +44,18 @@
             <a href="#">Esqueceu a senha?</a>
 
             </form>
+
+            <h2 class="title2" id="tituloCadastro">Criar Conta</h2>
+
+            <form id="formCadastro">
+                <input type="text" placeholder="Nome Completo">
+
+
+            <button class="btn">Cadastrar</button>
+            </form>
         </section>
     </main>
+
+    <script src="../src/js/script.js"></script>
 </body>
 </html>
