@@ -45,6 +45,9 @@ mobileNavbar.init();
 //Parte Felipe Login e cadastro
 
 function mostrarLogin() {
+
+  if (!document.getElementById('formLogin')) return;
+
   document.getElementById('formLogin').style.display = 'block';
   document.getElementById('tituloLogin').style.display = 'block';
 
@@ -56,6 +59,9 @@ function mostrarLogin() {
 }
 
 function mostrarCadastro() {
+
+    if (!document.getElementById('formCadastro')) return;
+
   document.getElementById('formLogin').style.display = 'none';
   document.getElementById('tituloLogin').style.display = 'none';
 
@@ -67,5 +73,7 @@ function mostrarCadastro() {
 }
 
 window.addEventListener('load', function(){
+  if (document.getElementById('formLogin')) {
   mostrarLogin();
+    }
 });
