@@ -2,14 +2,37 @@ main {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
+    gap: 80px;
+    padding: 40px 20px;
 }
 
 .logo {
     flex: 1;
+    text-align: center;
+}
+
+.logo .tittle {
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.logo .descricao {
+    color: #666;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .form-container {
     flex: 1;
+    max-width: 450px;
+}
+
+.title2 {
+    color: #1e3a8a;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
 .tabs {
@@ -23,6 +46,15 @@ main {
     border: none;
     background-color: #ddd;
     cursor: pointer;
+}
+
+form a {
+    display: block;
+    text-align: center;
+    color: #1e3a8a;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 .tab.active {
@@ -39,6 +71,10 @@ input {
 .checkbox {
     display: flex;
     align-items: center;
+}
+
+img {
+    width: 280px;
 }
 
 
