@@ -72,6 +72,9 @@ input {
     display: flex;
     align-items: center;
 }
+.checkbox input:hover{
+    cursor: pointer;
+}
 
 img {
     width: 280px;
