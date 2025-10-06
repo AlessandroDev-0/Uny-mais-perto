@@ -75,6 +75,9 @@ input {
     gap: 8px;
     margin: 15px 0;
 }
+.checkbox input:hover{
+    cursor: pointer;
+}
 
 .logo img {
     max-width: 400px;
