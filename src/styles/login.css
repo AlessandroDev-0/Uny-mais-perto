@@ -72,10 +72,14 @@ input {
 .checkbox {
     display: flex;
     align-items: center;
+    gap: 8px;
+    margin: 15px 0;
 }
 
-img {
-    width: 280px;
+.logo img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -89,8 +93,9 @@ img {
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-img {
-    width: 500px;
+.btn:hover {
+    background-color: #2563eb;
 }
