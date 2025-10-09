@@ -1,7 +1,6 @@
 .home {
     display: flex;
     align-items: center;
-    gap: 3rem;
     background-color: white;
     padding: 3rem;
     border-radius: 10px;
