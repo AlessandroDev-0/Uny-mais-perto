@@ -58,17 +58,22 @@ header ul li a:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
+  header h1 {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+  }
   .nav-list {
     position: absolute;
-    top: 8vh;
-    right: 0;
+    top: 70px;
+    right: -10px;
     width: 50vw;
     height: 92vh;
-    background: #0812a891;
+    background: #3366AA;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
