@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -44,6 +45,10 @@ main {
     color: #374151;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.card a {
+    color: black;
 }
 
 .card:hover {
