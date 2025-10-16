@@ -3,59 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login - Ônibus Médico Móvel</title>
     <link rel="stylesheet" href="../src/styles/login.css">
-    <title>Login/Cadastro</title>
 </head>
 <body>
-    <section>
-        <a href="index.html" class="btn">Voltar</a>
-    </section>
-    <main>
-        <section class="logo">
-            <h1 class="tittle">ÔNIBUS MÉDICO MÓVEL</h1>
-
-            <div>
-                <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="">
-            </div>
-
+    <main class="container">
+        <section class="painel-esquerdo">
+            <a href="index.html" class="btn-voltar">Voltar ao site</a>
+            
+            <h1 class="titulo-principal">ÔNIBUS MÉDICO MÓVEL</h1>
+            <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="Ônibus Médico">
             <p class="descricao">Saúde mais perto de você</p>
         </section>
-
-        <section class="form-container">
-
-            <div class="tabs">
-            <button class="tab active" onclick="mostrarLogin()">Login</button>
-            <button class="tab" onclick="mostrarCadastro()">Cadastro</button>
-            </div>
-
-            <h2 class="title2" id="tituloLogin">Entrar no sistema</h2>
-            <form id="formLogin">
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-
-            <div class="checkbox">
-            <input type="checkbox">
-            <p class="descricao">Lembrar-me</p>
-            </div>
-
-            <button class="btn">Entrar</button>
-
-            <a href="#">Esqueceu a senha?</a>
-
-            </form>
-
-            <h2 class="title2" id="tituloCadastro">Criar Conta</h2>
-
-            <form id="formCadastro">
-                <input type="text" placeholder="Nome Completo">
-
-
-            <button class="btn">Cadastrar</button>
+        
+        <section class="painel-direito">
+            <h2 class="titulo-secundario">BEM-VINDO DE VOLTA</h2>
+            <p class="subtitulo">É bom ver você novamente! Por favor, faça o login na sua conta.</p>
+            
+            <form>
+                <label>Usuário</label>
+                <input type="text" placeholder="Seu usuário">
+                
+                <label>Senha</label>
+                <input type="password" placeholder="Sua senha">
+                
+                <div class="opcoes">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Lembrar meu acesso
+                    </label>
+                    <a href="#" class="link">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit">ENTRAR</button>
+                
+                <p class="texto-cadastro">
+                    Ainda não tem uma conta? <a href="cadastro.html" class="link">Cadastre-se</a>
+                </p>
             </form>
         </section>
     </main>
-
-    <script src="../src/js/script.js"></script>
 </body>
 </html>

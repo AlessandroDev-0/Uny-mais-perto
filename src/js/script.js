@@ -41,39 +41,3 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
-
-//Parte Felipe Login e cadastro
-
-function mostrarLogin() {
-
-  if (!document.getElementById('formLogin')) return;
-
-  document.getElementById('formLogin').style.display = 'block';
-  document.getElementById('tituloLogin').style.display = 'block';
-
-  document.getElementById('formCadastro').style.display = 'none';
-  document.getElementById('tituloCadastro').style.display = 'none';
-
-  document.querySelectorAll('.tab')[0].classList.add('active');
-  document.querySelectorAll('.tab')[1].classList.remove('active');
-}
-
-function mostrarCadastro() {
-
-    if (!document.getElementById('formCadastro')) return;
-
-  document.getElementById('formLogin').style.display = 'none';
-  document.getElementById('tituloLogin').style.display = 'none';
-
-  document.getElementById('formCadastro').style.display = 'block';
-  document.getElementById('tituloCadastro').style.display = 'block'
-
-  document.querySelectorAll('.tab')[0].classList.remove('active');
-  document.querySelectorAll('.tab')[1].classList.add('active');
-}
-
-window.addEventListener('load', function(){
-  if (document.getElementById('formLogin')) {
-  mostrarLogin();
-    }
-});
