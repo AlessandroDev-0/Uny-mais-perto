@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../src/styles/login.css">
+    <link rel="stylesheet" href="../src/styles/cadastro.css">
 </head>
 <body>
     <main>
-        <section class="ladoesquerdo">
-            <h1>ÔNIBUS MÉDICO MÓVEL</h1>
-            <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="onibusmedico">
-            <p>Saúde mais perto de você</p>
-            <!--<a href="../index.html">Voltar ao Site</a>-->
-        </section>
+        <div class="container">
+            <section class="ladoesquerdo">
+                <h1>ÔNIBUS MÉDICO MÓVEL</h1>
+                <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="onibusmedico">
+                <p>Saúde mais perto de você</p>
+                <a href="../index.html">Voltar ao Site</a>
+            </section>
 
-        <section class="ladodireito">
-            <h1>Cadastrar no sistema</h1>
+            <section class="ladodireito">
+                <h1>Cadastrar no sistema</h1>
 
-            <form>
-                <div class="form-group">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" placeholder="Digite seu usuário">
-                </div>
-                <div class="form-group">
-                    <label for="usuario">Telefone</label>
-                    <input type="text" placeholder="Digite seu usuário">
-                </div>
-                <div class="form-group">
-                    <label for="senha">Senha</label>
-                    <input type="password" placeholder="Digite sua senha">
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox">
-                    <label for="lembrar">Lembrar-me</label>
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-                
-                <button class="btn-default" type="submit">Cadastrar</button>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" placeholder="Digite seu CPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Digite seu email">
+                    </div>
 
-                <p>Já possui uma conta? <a href="login.html">Login</a></p>
-                
-            </form>
-        </section>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="lembrar">
+                        <label for="lembrar">Lembrar-me</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button class="btn-default" type="submit">Cadastrar</button>
+
+                    <p>Já possui uma conta? <a href="login.html">Login</a></p>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 </html>
