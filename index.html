@@ -8,14 +8,14 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Uny+Perto</title>
-    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
             <h1>Uny + Perto</h1>
-            <div class="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -32,7 +32,7 @@
     <main>
         <section class="home">
             <div class="home-image">
-                <img src="../image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="Imagem do ônibus médico móvel">
+                <img src="image/ChatGPT Image 28 de set. de 2025, 20_22_00.png" alt="Imagem do ônibus médico móvel">
             </div>
             <div class="home-text">
                 <h2>Saúde mais perto de Você</h2>
@@ -79,8 +79,7 @@
             <div class="mapaprev">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1136.7707379841536!2d-48.28200548156058!3d-18.91297154832129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1758829936710!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    aria-hidden="false" loading="lazy"></iframe>
             </div>
         </section>
     </main>
@@ -91,7 +90,6 @@
                 <p>Levando saúde e cuidado até quem mais precisa através do nosso hospital móvel.</p>
             </div>
             <nav class="footer-navegacao" aria-label="Navegação do rodapé">
-                
                 <ul>
                     <h3>Navegação</h3>
                     <li><a href="index.html">Início</a></li>
