@@ -23,7 +23,7 @@ main {
     padding: 2rem;
 }
 
-/* Seção home já em home.css, aqui são ajustes gerais */
+
 .previaservicos {
     margin: 3.5rem 0;
 }
@@ -76,7 +76,6 @@ main {
     color: #6b7280;
 }
 
-/* Localização / mapa */
 .locprev {
     display: flex;
     align-items: center;

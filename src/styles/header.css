@@ -33,6 +33,7 @@ header h1 {
     color: white;
     font-size: 0.95rem;
     transition: opacity 0.25s ease;
+    text-decoration: none;
 }
 
 .nav-list li a:hover {
@@ -60,7 +61,6 @@ header h1 {
   transition: 0.3s;
 }
 
-/* Responsive nav */
 @media (max-width: 768px) {
   .mobile-menu { display: block; }
   .nav-list {
@@ -89,7 +89,6 @@ header h1 {
   header h1 { font-size: 1.15rem; }
 }
 
-/* Toggle icon animation */
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
