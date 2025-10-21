@@ -9,3 +9,21 @@
 body {
     font-family: 'Arial', sans-serif;
 }
+
+.nav-list {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+th {
+    padding: 10px;
+}
+tr {
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+}

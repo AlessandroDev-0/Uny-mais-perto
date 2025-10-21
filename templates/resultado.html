@@ -32,7 +32,7 @@
     <main>
         <h1>Resultados</h1>
         <section class="filtros">
-            <h2>Período</h2>
+            <h2>Filtros</h2>
             <ul>
                 <li><a href="#">Paciente</a></li>
                 <li><a href="#">Amostra</a></li>
@@ -41,6 +41,90 @@
                 <li><a href="#">Monitor</a></li>
             </ul>
         </section>
+
+        <form>
+            <h4>Filtros</h4>
+            <section class="form-group">
+                <h2>Período</h2>
+                <input type="date">
+                <input type="date">
+            </section>
+            <section class="form-group">
+                <h2>Unidade coleta:</h2>
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+                <button>Pesquisar</button>
+            </section>
+            <section class="form-group">
+                <input type="radio">
+                <p>Hoje</p>
+                <input type="radio">
+                <p>7 dias</p>
+                <input type="radio">
+                <p>15 dias</p>
+
+                <p>* Utilizar período máximo de 10 dias para consulta</p>
+            </section>
+
+            <section class="form-group">
+                <h4>Omitar O.S:</h4>
+                <input type="checkbox">
+                <p>Entregues</p>
+                <input type="checkbox">
+                <p>Consultas Onlines</p>
+                <input type="checkbox">
+                <p>Não prontas</p>
+                <input type="checkbox">
+                <p>Exportadas</p>
+            </section>
+
+            <section class="form-group">
+                <input type="checkbox">
+                <p>Selecionas todas O.S</p>
+                <button>Imprimir resultados selecionados</button>
+            </section>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data/Hora</th>
+                    <th>Código O.S</th>
+                    <th>Paciente</th>
+                    <th>Situação</th>
+                    <th>Pedido lab.</th>
+                    <th>Deve doc.</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>08/06/2025 - 13:54:10</td>
+                    <td>00087643</td>
+                    <td>Paciente 1</td>
+                    <td>Não disponível</td>
+                    <td>10300</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>08/06/2025 - 13:54:10</td>
+                    <td>9976422</td>
+                    <td>Paciente 2</td>
+                    <td>Não disponível</td>
+                    <td>4321</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>08/06/2025 - 13:54:10</td>
+                    <td>987432</td>
+                    <td>Paciente 3</td>
+                    <td>Não disponível</td>
+                    <td>6532</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>    
     </main>
 
 </body>

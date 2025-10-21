@@ -43,9 +43,9 @@ header h1 {
 .login-btn {
     color: white;
     background-color: rgba(8,18,169,0.55);
-    padding: 0.45rem 0.9rem;
+    padding: 10px;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .mobile-menu {
