@@ -11,6 +11,8 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content {
