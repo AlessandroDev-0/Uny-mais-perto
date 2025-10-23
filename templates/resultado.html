@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Uny+Perto</title>
+    <title>Uny+Perto - Resultados</title>
     <link rel="stylesheet" href="../src/styles/resultado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -30,102 +27,98 @@
     </header>
 
     <main>
-        <h1>Resultados</h1>
-        <section class="filtros">
-            <h2>Filtros</h2>
-            <ul>
-                <li><a href="#">Paciente</a></li>
-                <li><a href="#">Amostra</a></li>
-                <li><a href="#">Pedido Lab</a></li>
-                <li><a href="#">Lab associado</a></li>
-                <li><a href="#">Monitor</a></li>
-            </ul>
+        <section class="paciente-info">
+            <div class="info-header">
+                <i class="fas fa-user-circle"></i>
+                <div>
+                    <h2>Paciente: <span>NOME COMPLETO DO PACIENTE</span></h2>
+                    <p>Código: <strong>2348540</strong></p>
+                </div>
+            </div>
+            <div class="info-details">
+                <div class="detail-item">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <small>Data de Nascimento</small>
+                        <strong>Data</strong>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-venus-mars"></i>
+                    <div>
+                        <small>Sexo</small>
+                        <strong>Feminino/Masculino</strong>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <small>Telefone</small>
+                        <strong>(XX) XXXXXXX</strong>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <small>Endereço</small>
+                        <strong>local</strong>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <form>
-            <h4>Filtros</h4>
-            <section class="form-group">
-                <h2>Período</h2>
-                <input type="date">
-                <input type="date">
-            </section>
-            <section class="form-group">
-                <h2>Unidade coleta:</h2>
-                <select name="" id="">
-                    <option value=""></option>
-                </select>
-                <button>Pesquisar</button>
-            </section>
-            <section class="form-group">
-                <input type="radio">
-                <p>Hoje</p>
-                <input type="radio">
-                <p>7 dias</p>
-                <input type="radio">
-                <p>15 dias</p>
+        <section class="ordem-servico">
+            <div class="os-header">
+                <h3><i class="fas fa-clipboard-list"></i> Ordem de Serviço</h3>
+                <span class="status-badge disponivel">Último resultado disponível</span>
+            </div>
+            <div class="os-info">
+                <p><strong>Código OS:</strong> 192.670421399</p>
+                <p><strong>Data/Hora:</strong> 02/10/2022 - 07:53:22</p>
+                <p><strong>Solicitante:</strong> Nome da Solicitante</p>
+                <p><strong>Unidade de coleta:</strong> Nome da unidade</p>
+            </div>
+        </section>
 
-                <p>* Utilizar período máximo de 10 dias para consulta</p>
-            </section>
-
-            <section class="form-group">
-                <h4>Omitar O.S:</h4>
-                <input type="checkbox">
-                <p>Entregues</p>
-                <input type="checkbox">
-                <p>Consultas Onlines</p>
-                <input type="checkbox">
-                <p>Não prontas</p>
-                <input type="checkbox">
-                <p>Exportadas</p>
-            </section>
-
-            <section class="form-group">
-                <input type="checkbox">
-                <p>Selecionas todas O.S</p>
-                <button>Imprimir resultados selecionados</button>
-            </section>
-        </form>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Data/Hora</th>
-                    <th>Código O.S</th>
-                    <th>Paciente</th>
-                    <th>Situação</th>
-                    <th>Pedido lab.</th>
-                    <th>Deve doc.</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>08/06/2025 - 13:54:10</td>
-                    <td>00087643</td>
-                    <td>Paciente 1</td>
-                    <td>Não disponível</td>
-                    <td>10300</td>
-                    <td>Sim</td>
-                </tr>
-                <tr>
-                    <td>08/06/2025 - 13:54:10</td>
-                    <td>9976422</td>
-                    <td>Paciente 2</td>
-                    <td>Não disponível</td>
-                    <td>4321</td>
-                    <td>Sim</td>
-                </tr>
-                <tr>
-                    <td>08/06/2025 - 13:54:10</td>
-                    <td>987432</td>
-                    <td>Paciente 3</td>
-                    <td>Não disponível</td>
-                    <td>6532</td>
-                    <td>Sim</td>
-                </tr>
-            </tbody>
-        </table>    
+        <section class="exames">
+            <h3><i class="fas fa-flask"></i> Informações da Ordem de Serviço</h3>
+            <table class="exames-table">
+                <thead>
+                    <tr>
+                        <th>Procedimento</th>
+                        <th>Data/Hora Entrega</th>
+                        <th>Status</th>
+                        <th>Material</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CRE - CREATININA</td>
+                        <td>04/10/2022 - 18:00:00</td>
+                        <td><span class="status concluido">Concluído</span></td>
+                        <td>SORO</td>
+                    </tr>
+                    <tr>
+                        <td>FER - FERRO SÉRICO</td>
+                        <td>04/10/2022 - 18:00:00</td>
+                        <td><span class="status concluido">Concluído</span></td>
+                        <td>SORO</td>
+                    </tr>
+                    <tr>
+                        <td>GLJ - GLICOSE</td>
+                        <td>04/10/2022 - 18:00:00</td>
+                        <td><span class="status concluido">Concluído</span></td>
+                        <td>SORO</td>
+                    </tr>
+                    <tr>
+                        <td>ANTMA - ANTIBIOGRAMA AUTOMATIZADO</td>
+                        <td>06/10/2022 - 17:00:00</td>
+                        <td><span class="status negativo">Negativo</span></td>
+                        <td>URINA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
-
 </body>
 </html>
