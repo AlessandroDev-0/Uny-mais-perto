@@ -27,9 +27,9 @@ main {
 
 .card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    max-width: 260px;
+    justify-content: center;
 }
 
 .servico-card {
@@ -38,8 +38,9 @@ main {
     overflow: hidden;
 }
 
-.servico-card:hove {
+.servico-card:hover {
     transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .servico-card img {
@@ -74,4 +75,71 @@ main {
 
 .servico-card .btn:hover {
     background-color: #1e40af;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .servico-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .servico-card p {
+        font-size: 0.9rem;
+    }
+
+    .servico-card .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .titulo-pagina {
+        font-size: 2rem;
+    }
+
+    .servico-card img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-pagina {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-card {
+        padding: 1rem;
+    }
+
+    .servico-card img {
+        height: 120px;
+    }
+
+    .servico-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .servico-card p {
+        font-size: 0.8rem;
+    }
+
+    .servico-card .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
 }
