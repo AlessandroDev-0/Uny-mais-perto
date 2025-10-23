@@ -1,4 +1,4 @@
-@import url('header.css');
+@import url(header.css);
 
 * {
     margin: 0;
@@ -216,16 +216,16 @@ td {
 
 
 
-/* Ajustes para melhorar a responsividade */
 
 @media(max-width: 768px) {
-    .nav-list {
-        display: none;
-    }
 
-    .mobile-menu {
+      .mobile-menu {
         display: block;
         cursor: pointer;
+    }
+
+    main {
+        padding: 0 1rem;
     }
 
     main {
