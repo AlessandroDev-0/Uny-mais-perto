@@ -141,7 +141,6 @@ a {
     text-decoration: none;
 }
 
-/* Responsividade */
 @media (max-width: 1024px) {
     .container {
         width: 85%;
@@ -210,16 +209,16 @@ a {
 
 @media (max-width: 480px) {
     .container {
-        width: 95%;
-        padding: 20px 15px;
+        width: 100%;
+        padding: 20px 75px;
     }
 
     .ladoesquerdo img {
-        width: 180px;
+        width: 150px;
     }
 
     .ladoesquerdo h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .ladoesquerdo p {
@@ -237,7 +236,8 @@ a {
     }
 
     .ladodireito h1 {
-        font-size: 20px;
+        font-size: 25px;
+        white-space: nowrap;
     }
 
     .form-group {
