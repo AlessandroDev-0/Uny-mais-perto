@@ -72,7 +72,37 @@ tbody tr:hover {
     background-color: #f0f6ff;
 }
 
+/* Ajuste das imagens na tabela */
+table img {
+    max-width: 100px; /* Tamanho padrão para telas maiores */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem na célula */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+/* Responsividade para imagens */
 @media (max-width: 768px) {
+    table img {
+        width: 100%; /* Faz a imagem ocupar toda a largura da célula */
+        max-width: none; /* Remove o limite de largura */
+        height: 120px; /* Define uma altura fixa para manter o layout consistente */
+        object-fit: cover; /* Faz a imagem cobrir toda a área designada */
+        border-radius: 6px; /* Ajusta as bordas arredondadas para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    table img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura */
+        height: 100px; /* Reduz a altura para telas muito pequenas */
+        object-fit: cover; /* Mantém a imagem cobrindo a área */
+        border-radius: 4px; /* Ajusta as bordas para telas muito pequenas */
+    }
+}
+
+@media (max-width: 600px) {
     table,
     thead,
     tbody,
@@ -114,7 +144,6 @@ tbody tr:hover {
         border-bottom: none;
     }
 }
-
 
 /* === BLOCO INFORMATIVO (NOVO) === */
 .informativo {
