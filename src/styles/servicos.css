@@ -26,27 +26,35 @@ main {
 }
 
 .card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 15px; /* Reduz o espaçamento entre os cards */
+    padding: 20px;
 }
 
+/* Estilização dos cards */
 .servico-card {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.servico-card:hover {
-    transform: translateY(-5px);
+    flex: 1 1 calc(25% - 15px); /* Cada card ocupa 25% da largura menos o espaçamento */
+    max-width: 220px; /* Define um tamanho máximo para os cards */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
+.servico-card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Ajuste das imagens */
 .servico-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 150px; /* Reduz a altura da imagem */
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .servico-card h3 {
@@ -84,6 +92,14 @@ main {
         gap: 1.5rem;
     }
 
+    .servico-card {
+        flex: 1 1 calc(33.33% - 15px); /* Cada card ocupa 33.33% da largura */
+    }
+
+    .servico-card img {
+        height: 130px; /* Reduz a altura da imagem */
+    }
+
     .servico-card h3 {
         font-size: 1.3rem;
     }
@@ -107,8 +123,22 @@ main {
         font-size: 2rem;
     }
 
+    .servico-card {
+        flex: 1 1 calc(50% - 15px); /* Cada card ocupa 50% da largura */
+    }
+
     .servico-card img {
-        height: 150px;
+        height: 120px; /* Reduz a altura da imagem */
+    }
+
+    .servico-card h3,
+    .servico-card p,
+    .servico-card .btn {
+        display: none; /* Esconde o título, texto e botão */
+    }
+
+    .servico-card img {
+        cursor: pointer; /* Adiciona o cursor de clique à imagem */
     }
 }
 
