@@ -97,7 +97,8 @@ main {
     font-weight: 500;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
     padding: 15px;
     font-size: 15px;
     width: 100%;
@@ -109,17 +110,19 @@ main {
 .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
+    gap: 10px; 
+    justify-content: space-between;  
     margin-bottom: 15px;
+    width: 100%; 
+    max-width: 400px; 
 }
 
 .checkbox-group a {
-    margin-left: auto;
     color: #3366AA;
     text-decoration: none;
     font-size: 14px;
 }
+
 
 .btn-default {
     border: none;
@@ -211,10 +214,11 @@ p {
         margin-bottom: 15px;
     }
 
-    .form-group input {
-        width: 100%;
-        font-size: 14px;
-        padding: 12px;
+    .form-group input,
+    .form-group select {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
     }
 
     .btn-default {
