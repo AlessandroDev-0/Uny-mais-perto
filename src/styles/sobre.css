@@ -22,7 +22,7 @@ main {
 
 .sobre-apresentacao {
     position: relative;
-    background:  url('../../image/imagem.png') center/cover no-repeat;
+    background:  url('../../image/img_sobre/imagem.png') center/cover no-repeat;
     height: 50vh;
     min-height: 400px;
     max-height: 600px;
