@@ -85,6 +85,15 @@ main {
     margin-bottom: 10px;
 }
 
+.ladodireito a {
+    color: orangered;
+}
+    
+
+.ladodireito p a:hover {
+    color: blue;
+}
+
 .form-group {
     padding: 10px 0;
     display: flex;
