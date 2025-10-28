@@ -106,14 +106,29 @@ main {
     font-weight: 500;
 }
 
-.form-group input,
-.form-group select {
+.form-group input {
     padding: 15px;
     font-size: 15px;
     width: 100%;
     max-width: 400px;
     border-radius: 5px;
     border: 1.5px solid gray;
+}
+
+.form-group select {
+     padding: 15px;
+    font-size: 15px;            
+    width: 100%;           
+    max-width: 400px; 
+    border-radius: 5px;   
+    border: 1.5px solid gray; 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;  
 }
 
 .checkbox-group {
