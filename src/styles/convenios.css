@@ -1,12 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
 
-
-* {
-    box-sizing: border-box;
-    list-style: none;
-}
-
 body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f8faff;
@@ -72,33 +66,31 @@ tbody tr:hover {
     background-color: #f0f6ff;
 }
 
-/* Ajuste das imagens na tabela */
 table img {
-    max-width: 100px; /* Tamanho padrão para telas maiores */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100px; 
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Centraliza a imagem na célula */
-    border-radius: 8px; /* Adiciona bordas arredondadas */
-    object-fit: contain; /* Garante que a imagem não distorça */
+    margin: 0 auto; 
+    border-radius: 8px; 
+    object-fit: contain; 
 }
 
-/* Responsividade para imagens */
 @media (max-width: 768px) {
     table img {
-        width: 100%; /* Faz a imagem ocupar toda a largura da célula */
-        max-width: none; /* Remove o limite de largura */
-        height: 120px; /* Define uma altura fixa para manter o layout consistente */
-        object-fit: cover; /* Faz a imagem cobrir toda a área designada */
-        border-radius: 6px; /* Ajusta as bordas arredondadas para telas menores */
+        width: 100%; 
+        max-width: none; 
+        height: 120px; 
+        object-fit: cover; 
+        border-radius: 6px; 
     }
 }
 
 @media (max-width: 480px) {
     table img {
-        width: 100%; /* Garante que a imagem ocupe toda a largura */
-        height: 100px; /* Reduz a altura para telas muito pequenas */
-        object-fit: cover; /* Mantém a imagem cobrindo a área */
-        border-radius: 4px; /* Ajusta as bordas para telas muito pequenas */
+        width: 100%; 
+        height: 100px; 
+        object-fit: cover;
+        border-radius: 4px; 
     }
 }
 
@@ -145,7 +137,6 @@ table img {
     }
 }
 
-/* === BLOCO INFORMATIVO (NOVO) === */
 .informativo {
     background-color: #eaf3ff;
     border-left: 5px solid #3366AA;
@@ -166,7 +157,6 @@ table img {
     font-weight: 700;
 }
 
-/* Responsividade do bloco informativo */
 @media (max-width: 900px) {
     .informativo {
         padding: 16px 18px;
